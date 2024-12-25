@@ -1,6 +1,8 @@
 :root {
     --primary-color: #FF6C00;
     --secondary-color: #303030;
+    --font-title-color: #FFFFFF;
+    --font-p-color: #9DA4BD;
 }
 
 html, body {
@@ -8,15 +10,15 @@ html, body {
 }
 
 .container {
-    display: block;
     position: relative;
     overflow: hidden;
     width: 1280px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 header {
-    display: block;
+    display: flex;
     position: relative;
     overflow: hidden;
     width: 1280px;
@@ -24,7 +26,6 @@ header {
 }
 
 header .sol-header {
-    display: block;
     position: relative;
     overflow: hidden;
     width: 155px;
@@ -67,3 +68,65 @@ header .sol-header .sosyal-medya-link a {
 header .sol-header .sosyal-medya-link a:hover {
     color: var(--primary-color);
 }
+
+header .sag-header {
+    border: 1px solid red;
+    width: 1125px;
+    background: url("../images/slider-bg-1.jpg");
+    display: flex;
+    flex-direction: column;
+    color: var(--font-title-color);
+}
+
+header .sag-header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 40px;
+}
+
+header .sag-header .nav ul {
+    display: flex;
+    gap: 0 40px;
+}
+
+header .sag-header .nav ul li {
+    list-style-type: none;
+}
+
+header .sag-header .nav ul li a.active {
+    color: var(--primary-color);
+}
+
+header .sag-header .nav ul li a {
+    color: var(--font-title-color);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+header .sag-header .nav .info {
+    display: flex;
+    gap: 0 40px;
+    align-items: center;
+}
+
+header .sag-header .nav .info address {
+    font-size: 12px;
+}
+
+header .sag-header .nav .info .info-btn {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    font-size: 12px;
+    padding: 12px 25px;
+    color: var(--font-title-color);
+    border-radius: 25px;
+}
+
+
+
+
+
+
