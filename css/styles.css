@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #FF6C00;
+    --secondary-color: #303030;
+}
+
+html, body {
+    font-family: "Open Sans", serif;
+}
+
+.container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 1280px;
+    height: 680px;
+}
+
+header .sol-header {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 155px;
+    height: 680px;
+}
+
+header .sol-header .logo {
+    position: relative;
+    display: inline-block;
+    margin-left: 55px;
+    margin-top: 32px;
+}
+
+header .sol-header .sosyal-medya-link {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 170px;
+    width: 200px;
+    width: 300px;
+    left: -70px;
+}
+
+header .sol-header .sosyal-medya-link span {
+    display: inline-block;
+    height: 1px;
+    width: 60px;
+    background-color: var(--secondary-color);
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header .sol-header .sosyal-medya-link a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+header .sol-header .sosyal-medya-link a:hover {
+    color: var(--primary-color);
+}
